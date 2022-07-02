@@ -137,12 +137,15 @@ footer > img {
     .personal-info{
         flex-direction: column;
         justify-content: center;
+        margin-left: 10%;
+        margin-right: auto;
     }
     body{
         flex-direction: column;
     }
     main{
         width:90%;
+        margin-top: 50px;
     }
     .data{
         width: 90%;
