@@ -1,6 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@200&display=swap');
+
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  display: flex;
+  background-color: black;
+  color: white;
+  font-family: 'Kantumruy Pro', sans-serif;
+}
+
+
+header {
+  flex:25%;
+  height: auto;
+  display: flex;
+  backdrop-filter: blur(20px);
+}
+
+header > div {
+    font-family: 'Kantumruy Pro', sans-serif;
+    margin-left: 25%;
+    margin-top: 150px;
+  width: 300px;
+  height: 150px;
+  background: rgb(195,86,34);
+  background: linear-gradient(0deg, rgba(195,86,34,1) 0%, rgba(253,151,45,1) 100%);   border-radius: 20px;
+}
+
+header > div > h1{
+    color: white;
+    font-size: 24px;
+    margin-top: 60px;
+}
+
+header > div > img{
+    position: absolute;
+    transform: translate(calc(150px - 75px), -100px);
+    border-radius: 50%;
+    width: 150px;
+}
+
+
+main{
+    width: 40%;
+    background: rgb(151,159,162);
+    background: linear-gradient(0deg, rgba(151,159,162,1) 0%, rgba(116,104,91,1) 100%);     padding: 2%;
+    border-radius: 20px;
+    margin-top: 150px;
+    height: fit-content;
+}
+
+.containers{
+    padding-left: 5%;
+    padding-right: 5%;
+
+    display: flex;
+    flex: 75%;
+    height: fit-content;
+    justify-content: space-around;
+}
+
+
+.data{
+    width: 40%;
+    margin-top: 150px;
+    background-color: gray;
+    border-radius: 20px;
+
+}
