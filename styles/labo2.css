@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@200&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@200&display=swap");
 
 *,
 *::before,
@@ -12,65 +11,157 @@ body {
   display: flex;
   background-color: black;
   color: white;
-  font-family: 'Kantumruy Pro', sans-serif;
+  font-family: "Kantumruy Pro", sans-serif;
 }
 
-
 header {
-  flex:25%;
+  flex: 30%;
   height: auto;
   display: flex;
+  justify-content: center;
   backdrop-filter: blur(20px);
 }
 
 header > div {
-    font-family: 'Kantumruy Pro', sans-serif;
-    margin-left: 25%;
-    margin-top: 150px;
+  font-family: "Kantumruy Pro", sans-serif;
+
+  margin-top: 150px;
   width: 300px;
   height: 150px;
-  background: rgb(195,86,34);
-  background: linear-gradient(0deg, rgba(195,86,34,1) 0%, rgba(253,151,45,1) 100%);   border-radius: 20px;
+  background: rgb(65, 65, 65);
+  background: linear-gradient(
+    0deg,
+    rgba(195, 86, 34, 1) 0%,
+    rgba(253, 151, 45, 1) 100%
+  );
+  border-radius: 20px;
 }
 
-header > div > h1{
-    color: white;
-    font-size: 24px;
-    margin-top: 60px;
+header > div > h1 {
+  color: white;
+  font-size: 24px;
+  margin-top: 60px;
 }
 
-header > div > img{
-    position: absolute;
-    transform: translate(calc(150px - 75px), -100px);
-    border-radius: 50%;
-    width: 150px;
+header > div > img {
+  position: absolute;
+  transform: translate(calc(150px - 75px), -100px);
+  border-radius: 50%;
+  width: 150px;
 }
 
+main {
+    color: black;
+  width: 40%;
+  background: rgb(151, 159, 162);
+  background: linear-gradient(
+    0deg,
+    rgba(151, 159, 162, 1) 0%,
+    rgba(184, 184, 184, 1) 100%
+  );
+  padding: 2%;
+  border-radius: 20px;
+  margin-top: 150px;
+  height: fit-content;
+}
 
-main{
-    width: 40%;
-    background: rgb(151,159,162);
-    background: linear-gradient(0deg, rgba(151,159,162,1) 0%, rgba(116,104,91,1) 100%);     padding: 2%;
-    border-radius: 20px;
+.containers {
+
+  display: flex;
+  flex-direction: column;
+  flex: 70%;
+  height: fit-content;
+  justify-content: space-around;
+}
+
+.data {
     margin-top: 150px;
-    height: fit-content;
+  width: 40%;
+  display: flex;
+  align-content: flex-start;
+  flex-direction: column;
+
+  
 }
 
-.containers{
-    padding-left: 5%;
-    padding-right: 5%;
+section{
+    background: rgb(151, 159, 162);
+    background: linear-gradient(
+      0deg,
+      rgba(151, 159, 162, 1) 0%,
+      rgba(184, 184, 184, 1) 100%
+    );    color: black;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 2%;
 
+}
+
+.aptitudes{
+    background: rgb(151, 159, 162);
+    background: linear-gradient(
+      0deg,
+      rgba(151, 159, 162, 1) 0%,
+      rgba(184, 184, 184, 1) 100%
+    );    color: black;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 2%;
+}
+
+.personal-info{
     display: flex;
-    flex: 75%;
-    height: fit-content;
     justify-content: space-around;
 }
 
-
-.data{
-    width: 40%;
-    margin-top: 150px;
-    background-color: gray;
+footer{
+    background: rgb(151, 159, 162);
+    background: linear-gradient(
+      0deg,
+      rgba(151, 159, 162, 1) 0%,
+      rgba(184, 184, 184, 1) 100%
+    );    color: black;
     border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 2%;
+    margin: 5%;
 
 }
+
+footer > img {
+    margin-left: 25%;
+    width: 50%;
+}
+
+@media (max-width: 700px){
+    .personal-info{
+        flex-direction: column;
+        justify-content: center;
+    }
+    body{
+        flex-direction: column;
+    }
+    main{
+        width:90%;
+    }
+    .data{
+        width: 90%;
+        margin-top: 50px;
+    }
+}
+
+
+
+@media (min-width:701px) and (max-width: 1100px) {
+    body{
+        flex-direction: column;
+    }
+    
+    main{
+        margin-top: 50px;
+    }
+    .data{
+        margin-top: 50px
+    }
+}
+  
